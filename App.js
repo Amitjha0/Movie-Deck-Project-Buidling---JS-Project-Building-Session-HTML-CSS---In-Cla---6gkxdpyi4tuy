@@ -1,7 +1,3 @@
-// document.getElementById
-// document.getElementsByClassName
-// document.getElementsByName
-
 let pageNumber;
 let totalPages = 0;
 let currentState = "desc";
@@ -87,12 +83,11 @@ async function showMovies(
   if (!customMovieArray) {
     movieControls.classList.remove("hidden");
     const options = {
-      method: "GET",
+      method: 'GET',
       headers: {
-        accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZjEwMjIzNGM0YzcwZjZhMDRmNWIyOTFlN2ZjMTU4YyIsInN1YiI6IjY0ZDNjMGI3MDIxY2VlMDExYzhmMTYzNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qRQZAy5zW4VQAn64hrz_hC4qTOOZH8Xfwx9vfMIEBzE",
-      },
+        accept: 'application/json',
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZGNkZWM4NGYyZDc1ODA2NWFhYzNjZTYxY2E1ZWViNiIsInN1YiI6IjY0ZDUwNjEyZDEwMGI2MDExYzgwMjcwZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.LAzifNPFYjWGUYG7cfkemM6yyoe5gK_bI-H_dhWhVvc'
+      }
     };
     let response;
     response = await fetch(
