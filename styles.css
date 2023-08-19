@@ -76,7 +76,7 @@ nav a {
 .movie {
   width: 200px;
   height: 300px;
-  border: 1px solid black;
+  border: 1px solid red;
   font-size: 10px;
   border-radius: 12px;
   overflow: hidden;
