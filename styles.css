@@ -21,6 +21,9 @@ nav a {
   justify-content: center;
   align-items: center;
   margin: 12px;
+  /* margin-left: 50%;
+  transform: translateX(-50%);
+  display: inline-block; */
 }
 
 #search-bar-input {
@@ -90,7 +93,10 @@ nav a {
   padding: 4px;
 }
 
-
+/* .movie h2 {
+  font-size: 12px;
+  text-align: center;
+} */
 
 .movie h2 {
   font-size: 12px;
