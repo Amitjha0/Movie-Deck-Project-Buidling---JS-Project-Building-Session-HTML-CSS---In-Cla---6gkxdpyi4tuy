@@ -3,6 +3,10 @@
   margin: 0;
   font-family: 'Exo 2', sans-serif;
 }
+body{
+  background-color: rgba(216, 187, 218, 0.568);
+}
+
 
 nav {
   padding:20px;
@@ -29,6 +33,10 @@ nav a{
   1px 22px 10px rgba(16,16,16,0.2),
   1px 25px 35px rgba(16,16,16,0.2),
   1px 30px 60px rgba(16,16,16,0.4);
+}
+
+nav a:hover{
+  color: red;
 }
 
 #search-bar{
@@ -67,13 +75,13 @@ nav a{
   z-index: 0;
   background: #fff;
   overflow: hidden;
-  border: 2px solid #d90429;
-  color: #d90429;
+  border: 2px solid #919191;
+  color: #919191;
   height: 30px;
   min-width: 100px;
 }
 .button:hover {
-  color: #fff;
+  color: #d90429;
 }
 .button:hover:after {
   height: 100%;
@@ -87,7 +95,7 @@ nav a{
   bottom: 0;
   height: 0;
   width: 100%;
-  background: #d90429;
+  background: #919191;
 }
 
 #sort{
@@ -97,4 +105,55 @@ nav a{
 }
 #features{
   margin-left: 40px;
+}
+
+#movie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.movie-card{
+  height: 400px;
+  width: 250px;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.fa-regular{
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.movie-card footer{
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+section p{
+  margin-top: 20px;
+  display: inline-block;
+}
+
+section h2{
+  margin-left: 5px;
+}
+
+p{
+  margin-left: 5px;
 }
